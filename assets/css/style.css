@@ -54,6 +54,15 @@ h3 {
 
 /* header */
 
+/*
+Classes start with a period and can Be used multiple times throughout the document: .class
+IDs begin with the pound sign and should only be used once in the document: #one_id
+*/
+
+#main-container section p{
+  color: green;
+}
+
 #masthead {
   position: fixed;
   z-index: 99;
@@ -112,7 +121,7 @@ footer {
   height: 50px;
 }
 
-h3, h2 {
+footer h3, footer h2 {
   padding-bottom: 20px;
   margin-bottom: 15px;
   line-height: 22px;
@@ -151,7 +160,6 @@ h3, h2 {
 }
 
 .work img {
-
   max-width: 100%; height:auto;
   border: 0 none;
   opacity: 0.8;
@@ -172,7 +180,8 @@ h3, h2 {
 }
 
 .auth-image {
-  max-width: 100%; height:auto;
+  max-width: 100%; 
+  height:auto;
   float: left;
   width: 200px;
   height: auto;
@@ -181,7 +190,6 @@ h3, h2 {
 }
 
 /* contact page */
-f
 #contact-form ul {
   margin-bottom: 20px;
 }
@@ -207,7 +215,7 @@ textarea {
   border: 1px solid #dddddd;
 }
 
-textarea {f
+textarea {
   height: 200px;
 }
 
@@ -219,10 +227,14 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+
 @media only screen and (max-width: 640px) {
+
   header {
   position: static;
   }
+
 #logo {
   Width: 100%;
 }
@@ -241,5 +253,27 @@ img.portImage {
 
 }
 
+}
+
+@media only screen and (max-width: 600px- 1300px) {
+  header {
+    position: static;
+    }
+  
+  #logo {
+    Width: 100%;
+  }
+  
+  nav {
+    text-align: center;
+    float: none;
+  }
+  div.work {
+    width: 100%;
+    height:auto;
+  }
+  img.portImage {
+    width: 100%;
+    height: auto;
 }
 
